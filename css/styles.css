@@ -1,9 +1,40 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 header,
 section {
-    padding: 1rem;
+  padding: 1rem;
 }
-/* developer styles go here */
+
+.snowflake {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+}
+
+p {
+  max-width: 80%;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  position: sticky;
+  top: 0;
+}
+/* this does not work because there are no siblings to scroll underneath this element. */
+
+h2 {
+  position: sticky;
+  top: 0;
+  background-color: tomato;
+  padding: 1rem 0.5rem;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+h3 {
+  position: sticky;
+  top: 68px;
+  background-color: white;
+}
